@@ -1,7 +1,7 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-  background: #f0f4f8;
+  background: #8953a8;
   font-family: 'Segoe UI', system-ui, sans-serif;
   min-height: 100vh;
   display: flex;
@@ -28,10 +28,19 @@ body {
   margin-bottom: 16px;
 }
 
-.nome {
+.nome, .nome2 {
   font-size: 1.6rem;
-  color: #1a202c;
+  color: #3778fc;
   margin-bottom: 4px;
+}
+
+.nome2{
+  color: #0bff1f;
+}
+
+span{
+  color: #696969;
+  font-weight: 700;
 }
 
 .cargo {
@@ -51,3 +60,27 @@ body {
 }
 
 .bio p { font-size: .88rem; color: #4a5568; line-height: 1.6; }
+
+#habilidades h2 {
+  font-size: 1rem;
+  color: #718096;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  margin-bottom: 12px;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+.skill {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 4px 14px;
+  border-radius: 20px;
+  font-size: .82rem;
+  font-weight: 600;
+  transition: transform .2s;
+}
+.skill:hover { transform: scale(1.08); }
